@@ -1,0 +1,220 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    background: #1c0522;
+    overflow-x: hidden;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 50px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(#2b1055,#7597de);
+}
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #1c0522, transparent);
+    z-index: 1000;
+}
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+section img#awan{
+    width: 100%;
+    height: 40%;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+}
+#text{
+    position: absolute;
+    display: inline-block;
+    color: #fff;
+    right: -350px;
+    white-space: nowrap;
+    font-size: 1vw;
+    z-index: 9;
+}
+#btn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #fff;
+    color: #2b1055;
+    font-size: 1.5em;
+    z-index: 9;
+    transform: translateY(40px);
+    margin-right: 10px;
+}
+.sec{
+    position: relative;
+    padding: 100px;
+    background: #1c0522;
+    width: 100%;
+}
+.sec h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #fff;
+    text-align: center;
+}
+.sec{
+    font-size: 20px;
+    color: #fff;
+}
+.looping{
+    text-align: center;
+    padding-top: 20vh;
+    color: #fff;
+    background: #1c0522;
+    align-content: center;
+}
+.looping h3{
+    padding-bottom: 10vh;
+    font-size: 40px;
+}
+.looping p{
+    margin-bottom: 5vh;
+}
+div #a{
+    text-align: center;
+}
+.container{
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+     position: relative;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     padding: 30px;
+}
+.container .card{
+    max-width: 300px;
+    height: 215px;
+    position: relative;
+    background: white;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+.container .card:hover{
+    height: 420px;
+}
+.container .card .imgbox{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -50px;
+    left: 0px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+.container .card .imgbox img{
+    max-width: 100%;
+    border-radius: 4px;
+
+}
+.container .card .content{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+.container .card:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0;
+    transition-delay: 0.1s;
+}
+.sec .nmr2{
+    text-align: center;
+}
+.sec .nmr2 h3{
+    font-size: 40px;
+}
+.sec .nmr2 p{
+    margin-bottom: 5vh;
+}
+.sec h2{
+    font-size: 30px;
+}
+form {
+    border: 1px solid;
+    text-align: center;
+}
+
+form pre p{
+    font: ;
+    margin: 7px 20px;
+    text-align: center;
+    font-family: quicksand, sans-serif;
+}
+
+form .simpan{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 25px;
+    border-radius: 20px;
+    padding: 1px 10px;
+    transition: all 0.3s ease;
+}
+form .simpan:hover{
+    transform: scale(1.08);
+}
+footer{
+    padding: 30px 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}

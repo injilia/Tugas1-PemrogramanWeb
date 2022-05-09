@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+                Tugas Dasar JavaScript
+        </title>
+        <link rel="stylesheet" type="text/css" href="style.css"></link>
+        <script src="js.js"></script>
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">
+                Tugas Dasar JavaScript<br>
+                kelompok 4
+            </a>
+            
+        </header>
+        <section>
+            <img src="img/stars.png" id="stars">
+            <img src="img/gunungbelakangg.png" id="gb">
+            <img src="img/gunungdepan.png" id="gd">
+            <img src="img/rumput4.png" id="r4">
+            <img src="img/rumput3.png" id="r3">
+            <img src="img/rumput 2.png" id="r2">
+            <img src="img/awan.png" id="awan">
+            <!--<h2 id="text">Gut Nite</h2>-->
+            <a href="#looping" id="btn">Nomor 1</a>
+            <a href="#sec" id="btn">Nomor 2</a>
+ 
+        </section>
+        <!--===================================== NOMOR 1 ========================================-->
+        <div class="looping" id="looping">
+            <h3 id="a">-- Nomor 1 -- </h3>
+            <p>Menyimpan nama-nama anggota kelompok <br>menggunakan array kemudian Menampilkannya dengan forEach() Loop <br> </p>
+
+            <!-- Tugas Javascript no 1 -->
+            <script type="text/javascript">const mhs = ['Rosalina Oktavira Injilia Karinda', 'Rangga Saputra Menidiansyah', 'Elsa Leren Jenever Ratu'];
+
+                mhs.forEach(function(element) {
+                    document.write(`<li>${element}</li>`);
+                })
+            </script>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="imgbox">
+                    <img src="img2/injidesyoo.jpeg">
+                </div>
+                <div class="content">
+                    <h2>Rosalina</h2>
+                    <p>20021106168</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgbox">
+                    <img src="img2/ranggakyuun.jpeg">
+                </div>
+                <div class="content">
+                    <h2>Rangga</h2>
+                    <p>20021106098</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgbox">
+                    <img src="img2/elsachann.jpeg">
+                </div>
+                <div class="content">
+                    <h2>Elsa</h2>
+                    <p>20021106030</p>
+                </div>
+            </div>
+        </div>
+        <div class="sec" id=sec>
+            <div class="nmr2">
+                <h3>-- Nomor 2 --</h3>
+                <p><br>Menghitung nilai mahasiswa <br</p> 
+            </div>
+            <h2>Isilah Data berikut dengan benar</h2>
+            <form action="#" id="myform">
+
+                <pre>
+                    <p>Nama Mahasiswa : <input type="text" id="nama_in">
+                    <p>NIM                      : <input type="text" id="nim">
+                    <p>Mata Kuliah          : <input type="text" id="mk">
+                    <p>Nilai Tugas 1        : <input type="number" id="n1">
+                    <p>Nilai Tugas 2        : <input type="number" id="n2">
+                    <p>Nilai Tugas 3        : <input type="number" id="n3">
+                    <p>Nilai Tugas 4        : <input type="number" id="n4">
+                    <p>Nilai Tugas 5        : <input type="number" id="n5">
+                    <p>Nilai UTS              : <input type="number" id="n6">
+                    <p>Nilai UAS            : <input type="number" id="n7">  
+                </pre>
+  
+                    <input  class="simpan" type="button" onclick="data()" value="Hitung">
+                    <input class="simpan" type="reset" value="Reset"><br><br>
+                    <p id="nama_out"></p>
+                    <p id="nim_out"></p>
+                    <p id="mk_out"></p>
+                    <p id="jumlah_out"></p>
+                    <br>
+                    <p id="grade_out"></p>
+                    <br><br><br>
+                    
+            </form>
+        </div>
+        <footer>
+            <div class="desu">
+                <small>Copyright &copy;2022 - Kelompok 4 . All Right Reserved</small>
+            </div>
+        </footer>
+        <script type="text/javascript">
+            
+            let stars = document.getElementById('stars');
+            let awan = document.getElementById('awan');
+            let mountains_front = document.getElementById('gd');
+            let mountains_behind = document.getElementById('gb');
+            let r1 = document.getElementById('r1');
+            let r2 = document.getElementById('r2');
+            let r3 = document.getElementById('r3');
+            let r4 = document.getElementById('r4');
+            let btn = document.getElementById('btn');
+             window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            awan.style.left = value * 0.2 +'px';
+            mountains_front.style.top = value * 1 +'px';
+            mountains_behind.style.top = value * 1.2 +'px';
+            r2.style.top = value * 0.4 +'px';
+            r3.style.top = value * 0.5 +'px';
+            r4.style.top = value * 0.7 +'px';
+            btn.style.top = value * 0.7 +'px';
+            
+        })
+        </script>
+    </body>
+</html>
